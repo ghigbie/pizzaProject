@@ -41,6 +41,7 @@
 
     <ImageView
         android:id="@+id/pizzaImage"
+        android:src="@drawable/pizza_image"
         android:layout_below="@id/linearMainText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
