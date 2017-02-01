@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/pizza_image"
-        android:label="@string/app_name"
+        android:label="@string/app_title"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
