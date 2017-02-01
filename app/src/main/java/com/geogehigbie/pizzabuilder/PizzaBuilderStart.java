@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 
 /**
@@ -29,7 +30,28 @@ public class PizzaBuilderStart extends AppCompatActivity {
     private void addClickListeners(){
         Button yesButton = (Button) findViewById(R.id.yes_start);
         Button noButton = (Button) findViewById(R.id.no_start);
-        Button seeListButton = (Button) findViewById(R.id.)
+        Button seeListPizzasButton = (Button) findViewById(R.id.seeListOfPizza);
+
+        yesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        noButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        seeListPizzasButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 }
