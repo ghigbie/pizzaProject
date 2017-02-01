@@ -20,8 +20,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".PizzaBuilderStart"></activity>
     </application>
 
 </manifest>
