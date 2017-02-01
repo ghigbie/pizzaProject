@@ -52,11 +52,13 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/seeListOfPizza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linear_layout_start"
                 android:layout_centerInParent="true"
-                android:text="@string/see_list" />
+                android:text="@string/see_list"
+                />
 
         </RelativeLayout>
 

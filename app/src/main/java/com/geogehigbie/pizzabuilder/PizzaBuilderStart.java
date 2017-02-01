@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 
 /**
  * Created by georgehigbie on 1/31/17.
@@ -26,6 +27,9 @@ public class PizzaBuilderStart extends AppCompatActivity {
     }
 
     private void addClickListeners(){
+        Button yesButton = (Button) findViewById(R.id.yes_start);
+        Button noButton = (Button) findViewById(R.id.no_start);
+        Button seeListButton = (Button) findViewById(R.id.)
 
     }
 }
