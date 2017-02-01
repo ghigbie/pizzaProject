@@ -4,6 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -32,19 +37,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/yes"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:layout_margin="@dimen/buttonMargin"/>
 
             <Button
                 android:id="@+id/no_start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/no"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:layout_margin="@dimen/buttonMargin"/>
 
         </LinearLayout>
 
     </RelativeLayout>
 
-    </LinearLayout>
+</FrameLayout>
 
 </LinearLayout>
