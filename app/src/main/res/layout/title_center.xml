@@ -19,12 +19,14 @@
             android:textAppearance="?android:textAppearanceLarge"
             android:textStyle="bold"
             android:textColor="#ffffff"
-            android:textSize="24sp"/>
+            android:textSize="24sp"
+            android:layout_marginRight="@dimen/titleLayoutMargin"/>
 
         <ImageView
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:src="@drawable/pizza_image"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pizza_image"
+            android:paddingTop="@dimen/titleImagePadding"/>
 
     </LinearLayout>
 

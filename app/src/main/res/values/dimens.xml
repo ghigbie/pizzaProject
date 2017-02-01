@@ -6,4 +6,6 @@
     <dimen name="imageMargin">15dp</dimen>
     <dimen name="imageMarginUpper">20dp</dimen>
     <dimen name="linearLayoutMarginBottom">25dp</dimen>
+    <dimen name="titleLayoutMargin">5dp</dimen>
+    <dimen name="titleImagePadding">10dp</dimen>
 </resources>
