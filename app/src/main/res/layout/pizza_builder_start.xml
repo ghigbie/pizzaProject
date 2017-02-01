@@ -17,7 +17,7 @@
                 android:id="@+id/question_start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/linear_layout_start"
+                android:layout_above="@+id/linear_layout_start"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/textMarginFragments"
                 android:text="@string/question_start"
@@ -54,7 +54,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/linear_layout_start"
+                android:layout_below="@+id/linear_layout_start"
                 android:layout_centerInParent="true"
                 android:text="@string/see_list" />
 
