@@ -3,9 +3,14 @@ package com.geogehigbie.pizzabuilder;
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import layout.PizzaList;
+import layout.ToppingsStart;
 
 /**
  * Created by georgehigbie on 1/31/17.
@@ -28,6 +33,9 @@ public class PizzaBuilderStart extends AppCompatActivity {
     }
 
     private void addClickListeners(){
+        FragmentManager fragmentManager = getSupportFragmentManager(); //this allows access to all buttons
+        final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
         Button yesButton = (Button) findViewById(R.id.yes_start);
         Button noButton = (Button) findViewById(R.id.no_start);
         Button seeListPizzasButton = (Button) findViewById(R.id.seeListOfPizza);
@@ -35,7 +43,9 @@ public class PizzaBuilderStart extends AppCompatActivity {
         yesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                fragmentTransaction.add(R.id.fragment_container, new ToppingsStart());
+                fragmentTransaction.addToBackStack();
+                fragmentTransaction.commit();
             }
         });
 
@@ -49,7 +59,9 @@ public class PizzaBuilderStart extends AppCompatActivity {
         seeListPizzasButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                fragmentTransaction.add(R.id.fragment_container, new PizzaList());
+                fragmentTransaction.addToBackStack();
+                fragmentTransaction.commit();
             }
         });
 
