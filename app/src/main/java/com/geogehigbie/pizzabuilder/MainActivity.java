@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void centerActionBar(){
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); //this is a soft error
         getSupportActionBar().setCustomView(R.layout.title_center);
     }
 
