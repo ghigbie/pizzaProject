@@ -28,7 +28,7 @@ public class PizzaBuilderStart extends AppCompatActivity {
     }
 
     private void centerActionBar(){
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); //this may be a soft error
         getSupportActionBar().setCustomView(R.layout.title_center);
     }
 
@@ -44,7 +44,7 @@ public class PizzaBuilderStart extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 fragmentTransaction.add(R.id.fragment_container, new ToppingsStart());
-                fragmentTransaction.addToBackStack();
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
@@ -60,7 +60,7 @@ public class PizzaBuilderStart extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 fragmentTransaction.add(R.id.fragment_container, new PizzaList());
-                fragmentTransaction.addToBackStack();
+                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
