@@ -20,7 +20,9 @@
              android:layout_above="@id/linear_layout_start"
              android:text="@string/question_start"
              android:textAppearance="?android:textAppearanceLarge"
-             android:textStyle=""
+             android:textStyle="bold"
+             android:layout_margin="@dimen/textMarginFragments"
+             android:layout_centerHorizontal="true"
              />
 
 

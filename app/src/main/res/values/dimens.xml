@@ -9,4 +9,5 @@
     <dimen name="titleLayoutMargin">5dp</dimen>
     <dimen name="titleImagePadding">10dp</dimen>
     <dimen name="buttonMargin">20dp</dimen>
+    <dimen name="textMarginFragments">20dp</dimen>
 </resources>

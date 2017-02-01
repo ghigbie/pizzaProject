@@ -2,7 +2,7 @@
     <string name="app_name">PizzaBuilder</string>
     <string name="app_title">Pizza Builder</string>
     <string name="instructions">(Tap the pizza below to begin)</string>
-    <string name="question_start">Would you like to begin to build a pizza?</string>
+    <string name="question_start">Would you like to build a pizza?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 </resources>
