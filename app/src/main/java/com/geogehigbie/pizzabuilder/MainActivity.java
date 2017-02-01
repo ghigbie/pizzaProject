@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         addOnClickListeners();
     }
 
-    public void centerActionBar(){
+    private void centerActionBar(){
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.title_center);
     }
 
-    public void addOnClickListeners(){
+    private void addOnClickListeners(){
         ImageView pizzaImage = (ImageView) findViewById(R.id.pizzaImage);
         pizzaImage.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -17,10 +17,15 @@ public class PizzaBuilderStart extends AppCompatActivity {
         setContentView(R.layout.pizza_builder_start);
 
         centerActionBar();
+        addClickListeners();
     }
 
     private void centerActionBar(){
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.title_center);
+    }
+
+    private void addClickListeners(){
+
     }
 }
