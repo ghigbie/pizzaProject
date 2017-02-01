@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/question_start"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@id/linear_layout_start"
+             android:text="@string/question_start"
+             android:textAppearance="?android:textAppearanceLarge"
+             android:textStyle=""
+             />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/yes_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/no_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
