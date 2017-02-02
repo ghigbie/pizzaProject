@@ -18,26 +18,9 @@ public class CustomListAdapter extends ArrayAdapter<String> {
     public CustomListAdapter(Context context, String[] values) {
         super(context, R.layout.row_layout, values);
 
+    }
 
-        @NonNull
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-            View customView = layoutInflater.inflate(R.layout.row_layout_for_use, parent, false);
-
-            String item = getItem(position);
-
-            TextView textView = (TextView) customView.findViewById(R.id.row_text_view);
-            ImageView imageView = (ImageView) customView.findViewById(R.id.video_icon);
-
-            textView.setText(item);
-            imageView.setImageResource(R.drawable.video_icon_second);
-
-            return customView;
-
-        }
-}
-
+    @NonNull
     @Override
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
@@ -45,7 +28,12 @@ public class CustomListAdapter extends ArrayAdapter<String> {
 
         String item = getItem(position);
 
-        TextView textView = (TextView) customView.findViewById(R.id.row_layout)
+        TextView textView = (TextView) customView.findViewById(R.id.textViewCustom);
+        ImageView imageView = (ImageView) customView.findViewById(R.id.imageViewCustom);
+
+        textView.setText(item);
+        imageView.setImageResource(R.drawable.pizza_image);
+
+        return customView;
     }
-        return super.getDropDownView(position, convertView, parent);
-    }
+}
