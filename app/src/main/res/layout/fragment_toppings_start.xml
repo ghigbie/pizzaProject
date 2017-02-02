@@ -33,21 +33,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="pepperoni" />
 
             <Button
                 android:id="@+id/sausage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="sausage"/>
 
             <Button
                 android:id="@+id/canadian"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="can bacon"/>
 
         </LinearLayout>
 
