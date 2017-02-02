@@ -174,22 +174,36 @@
                 android:textColor="@color/colorTextTitle"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/toppingsEditText"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/textMargin"
-                android:background="@color/colorTextInputBackground"
-                android:hint="Enter a custom topping"
-                android:textAppearance="?android:textAppearanceLarge"
-                android:textColor="@color/colorTextInputBackground" />
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/toppingsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/textMargin"
+                    android:background="@color/colorTextInputBackground"
+                    android:hint="Enter a custom topping"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorTextInputBackground" />
 
+                <Button
+                    android:id="@+id/toppingsEnter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/enter"
+                    />
+
+            </LinearLayout>
             <Button
-                android:id="@+id/toppingsEnter"
+                android:id="@+id/toppingsDone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text=""
+                android:text="@string/done_toppings"
+                android:textAppearance="?android:textAppearanceLarge"
                 />
 
 
