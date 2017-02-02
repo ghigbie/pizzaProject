@@ -7,6 +7,7 @@
     android:weightSum="4">
 
     <ImageView
+        android:id="@+id/imageViewCustom"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
@@ -14,6 +15,7 @@
         android:src="@drawable/pizza_image" />
 
     <TextView
+        android:id="@+id/textViewCustom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
