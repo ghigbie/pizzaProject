@@ -212,7 +212,6 @@
             android:textAppearance="?android:textAppearanceLarge"
             android:textStyle="bold" />
 
-
     </RelativeLayout>
 
 </FrameLayout>

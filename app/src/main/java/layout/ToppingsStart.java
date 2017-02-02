@@ -16,6 +16,13 @@ public class ToppingsStart extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_toppings_start, container, false);
+
+        addOnClickListeners();
+    }
+
+
+    private void addOnClickListeners(){
+
     }
 
 
