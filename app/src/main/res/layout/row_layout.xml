@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageViewCustom"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/imageCustomViewSize"
+        android:layout_height="@dimen/imageCustomViewSize"
         android:layout_margin="@dimen/imageCustomViewMargin"
         android:layout_weight="1"
         android:src="@drawable/pizza_image" />
