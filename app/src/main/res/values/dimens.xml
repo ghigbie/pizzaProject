@@ -12,4 +12,5 @@
     <dimen name="titleImagePadding">10dp</dimen>
     <dimen name="buttonMargin">20dp</dimen>
     <dimen name="textMarginFragments">20dp</dimen>
+    <dimer name="toppingsButtonMargin">5dp</dimer>
 </resources>
