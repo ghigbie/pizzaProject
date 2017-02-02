@@ -4,6 +4,8 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="textMargin">10dp</dimen>
     <dimen name="imageMargin">15dp</dimen>
+    <dimen name="imageCustomViewMargin">10dp</dimen>
+    <dimen name="imageCustomViewSize">50dp</dimen>
     <dimen name="imageMarginUpper">20dp</dimen>
     <dimen name="linearLayoutMarginBottom">25dp</dimen>
     <dimen name="titleLayoutMargin">5dp</dimen>

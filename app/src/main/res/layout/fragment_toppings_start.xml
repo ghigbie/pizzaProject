@@ -17,7 +17,8 @@
             android:textStyle="bold"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/colorTextTitle"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/textMargin"/>
 
         <LinearLayout
             android:id="@+id/row1"
@@ -28,10 +29,25 @@
             android:layout_below="@+id/whatToppings">
 
             <Button
+                android:id="@+id/"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:layout_margin="@dimen/buttonMargin"/>
 
+            <Button
+                android:id="@+id/"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/buttonMargin"/>
+
+            <Button
+                android:id="@+id/"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/buttonMargin"/>
 
 
 
