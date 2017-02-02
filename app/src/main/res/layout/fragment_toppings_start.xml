@@ -164,6 +164,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/toppingsTextAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -174,6 +175,7 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/toppingsEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/textMargin"
@@ -181,6 +183,14 @@
                 android:hint="Enter a custom topping"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textColor="@color/colorTextInputBackground" />
+
+            <Button
+                android:id="@+id/toppingsEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                />
 
 
         </LinearLayout>
