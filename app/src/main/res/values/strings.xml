@@ -6,6 +6,7 @@
     <string name="see_list">See List of Existing Pizzas</string>
     <string name="list_item">Name of Pizza</string>
     <string name="what_toppings">What toppings would you like to add?</string>
+    <string name="or_add">OR add the custom toppings that you want below:</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
