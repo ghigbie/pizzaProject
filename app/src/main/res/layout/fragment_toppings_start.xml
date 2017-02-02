@@ -204,12 +204,13 @@
             android:id="@+id/toppingsDone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/done_toppings"
-            android:textAppearance="?android:textAppearanceLarge"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/buttonMargin"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="@string/done_toppings"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
