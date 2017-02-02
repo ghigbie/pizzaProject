@@ -178,7 +178,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorTextInputBackground"
-                android:layout_margin="@dimen/textMargin"/>
+                android:layout_margin="@dimen/textMargin"
+                android:hint="Enter a custom topping"
+                android:textColor="#000000"/>
 
 
         </LinearLayout>

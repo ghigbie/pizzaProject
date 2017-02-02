@@ -6,4 +6,5 @@
     <color name="colorTextTitle">#ffffff</color>
     <color name="colorBackgroud">#f45b2d</color>
     <color name="colorTextInputBackground">#e4e2e2</color>
+    <color name="colorTextInputText">#000000</color>
 </resources>
