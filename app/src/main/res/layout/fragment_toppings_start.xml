@@ -189,7 +189,7 @@
                     android:background="@color/colorTextInputBackground"
                     android:hint="Enter a custom topping"
                     android:textAppearance="?android:textAppearanceLarge"
-                    android:textColor="@color/colorTextInputBackground" />
+                    android:textColor="@color/colorTextInputText" />
 
                 <Button
                     android:id="@+id/toppingsEnter"
