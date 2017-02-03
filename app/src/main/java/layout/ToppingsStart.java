@@ -18,22 +18,24 @@ import java.util.ArrayList;
 
 public class ToppingsStart extends Fragment {
 
+    View view;
     private ArrayList<String> toppingsArrayList = new ArrayList<String>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        view = inflater.inflate(R.layout.fragment_toppings_start, container, false);
 
 
         addOnClickListenerDone();
 
-        return inflater.inflate(R.layout.fragment_toppings_start, container, false);
+        return view;
     }
 
 
     private void addOnClickListenerDone() {
-        Button doneButton = (Button) getView().findViewById(R.id.toppingsDone);
+        Button doneButton = (Button) view.findViewById(R.id.toppingsDone);
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,18 +47,18 @@ public class ToppingsStart extends Fragment {
     }
 
      private void addOnClickListenerToppings() {
-         Button pepperoni = (Button) getActivity().findViewById(R.id.pepperoni);
-         Button sausage = (Button) getActivity().findViewById(R.id.sausage);
-         Button canadianBacon = (Button) getActivity().findViewById(R.id.canadian);
-         Button bacon = (Button) getActivity().findViewById(R.id.bacon);
-         Button hamburger = (Button) getActivity().findViewById(R.id.hamburger);
-         Button chicken = (Button) getActivity().findViewById(R.id.chicken);
-         Button mushrooms = (Button) getActivity().findViewById(R.id.mushrooms);
-         Button olives = (Button) getActivity().findViewById(R.id.olives);
-         Button onions = (Button) getActivity().findViewById(R.id.onions);
-         Button peppers = (Button) getActivity().findViewById(R.id.peppers);
-         Button pineapple = (Button) getActivity().findViewById(R.id.pineapple);
-         Button tomatoes = (Button) getActivity().findViewById(R.id.tomatoes);
+         Button pepperoni = (Button) view.findViewById(R.id.pepperoni);
+         Button sausage = (Button) view.findViewById(R.id.sausage);
+         Button canadianBacon = (Button)  view.findViewById(R.id.canadian);
+         Button bacon = (Button)  view.findViewById(R.id.bacon);
+         Button hamburger = (Button)  view.findViewById(R.id.hamburger);
+         Button chicken = (Button)  view.findViewById(R.id.chicken);
+         Button mushrooms = (Button)  view.findViewById(R.id.mushrooms);
+         Button olives = (Button)  view.findViewById(R.id.olives);
+         Button onions = (Button)  view.findViewById(R.id.onions);
+         Button peppers = (Button)  view.findViewById(R.id.peppers);
+         Button pineapple = (Button)  view.findViewById(R.id.pineapple);
+         Button tomatoes = (Button)  view.findViewById(R.id.tomatoes);
 
          final Button[] buttons = {pepperoni, sausage, canadianBacon, bacon, hamburger, chicken,
                  mushrooms, olives, onions, peppers, pineapple, tomatoes};
