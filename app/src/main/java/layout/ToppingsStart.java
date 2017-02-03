@@ -30,7 +30,7 @@ public class ToppingsStart extends Fragment {
 
         addOnClickListenerDone();
         addOnClickListenerToppings();
-        addDoneOnClickListener();
+        addCustomToppingListener();
 
         return view;
     }
@@ -78,7 +78,7 @@ public class ToppingsStart extends Fragment {
          }
      }
 
-    private void addDoneOnClickListener(){
+    private void addCustomToppingListener(){
         Button customToppingAdd = (Button) view.findViewById(R.id.toppingsEnter);
         customToppingAdd.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -87,10 +87,10 @@ public class ToppingsStart extends Fragment {
                 String newCustomTopping = editText.getText().toString();
                 Toast.makeText(getContext(), newCustomTopping + " was added to your pizza.", Toast.LENGTH_SHORT);
                 toppingsArrayList.add(newCustomTopping);
+
             }
         });
     }
-
 
 
 }
