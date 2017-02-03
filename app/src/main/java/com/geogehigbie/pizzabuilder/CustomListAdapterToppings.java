@@ -31,7 +31,7 @@ public class CustomListAdapterToppings extends ArrayAdapter<String> {
         ImageView imageView = (ImageView) customView.findViewById(R.id.imageViewCustom);
 
         textView.setText(item);
-        imageView.setImageResource(R.drawable.pizza_image);
+        imageView.setImageResource(R.drawable.mushroom);
 
         return customView;
     }
