@@ -26,7 +26,7 @@ public class ToppingsStart extends Fragment {
         // Inflate the layout for this fragment
 
 
-       // addOnClickListeners();
+        addOnClickListeners();
 
         return inflater.inflate(R.layout.fragment_toppings_start, container, false);
     }
