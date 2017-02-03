@@ -40,7 +40,16 @@ public class ToppingsStart extends Fragment {
             }
         });
 
+        Button pepperoni = (Button) getActivity().findViewById(R.id.pepperoni);
+        Button saussage = (Button) getActivity().findViewById(R.id.sausage);
+        Button canadianBacon = (Button) getActivity().findViewById(R.id.canadian);
+        Button bacon = (Button) getActivity().findViewById(R.id.bacon);
+        Button hamburger = (Button) getActivity().findViewById(R.id.hamburger);
+        Button chicken = (Button) getActivity().findViewById(R.id.chicken);
+        Button saussage = (Button) getActivity().findViewById(R.id.sausage);
+
     }
+
 
 
 }
