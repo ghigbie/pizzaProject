@@ -18,22 +18,23 @@ import java.util.ArrayList;
 
 public class ToppingsStart extends Fragment {
 
+    private ArrayList<String> toppingsArrayList = new ArrayList<String>();
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
 
-        addOnClickListeners();
+       // addOnClickListeners();
 
         return inflater.inflate(R.layout.fragment_toppings_start, container, false);
     }
 
-    private ArrayList<String> toppingsArrayList = new ArrayList<String>();
 
     private void addOnClickListeners(){
-        Button done = (Button) getActivity().findViewById(R.id.toppingsDone);
-        done.setOnClickListener(new View.OnClickListener() {
+        Button doneButton = (Button) getActivity().findViewById(R.id.toppingsDone);
+        doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getFragmentManager();
