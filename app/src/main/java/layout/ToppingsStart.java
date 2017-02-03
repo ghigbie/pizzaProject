@@ -11,6 +11,8 @@ import android.widget.Button;
 
 import com.geogehigbie.pizzabuilder.R;
 
+import java.util.ArrayList;
+
 
 public class ToppingsStart extends Fragment {
 
@@ -25,6 +27,7 @@ public class ToppingsStart extends Fragment {
         return inflater.inflate(R.layout.fragment_toppings_start, container, false);
     }
 
+    private ArrayList<String> toppingsArrayList = new ArrayList<String>();
 
     private void addOnClickListeners(){
         Button done = (Button) getActivity().findViewById(R.id.toppingsDone);
