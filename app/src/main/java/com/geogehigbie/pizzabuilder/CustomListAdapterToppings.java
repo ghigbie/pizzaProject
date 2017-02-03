@@ -1,5 +1,6 @@
 package com.geogehigbie.pizzabuilder;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,9 @@ import android.widget.TextView;
 
 public class CustomListAdapterToppings extends ArrayAdapter<String> {
 
+    public CustomListAdapterToppings(Context context, String[] values){
+        super(context, R.layout.topping_list_layout, values);
+    }
 
     @NonNull
     @Override
