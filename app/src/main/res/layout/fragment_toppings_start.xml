@@ -34,8 +34,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="pepperoni"
-                android:onClick="pepperoni"/>
+                android:onClick="pepperoni"
+                android:text="pepperoni"/>
 
             <Button
                 android:id="@+id/sausage"
@@ -43,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="sausage"
-                android:onClick="sausage"/>
+                android:onClick="sausage"
+                android:text="sausage"/>
 
             <Button
                 android:id="@+id/canadian"
@@ -52,8 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="can bacon"
-                android:onClick="candianBacon"/>
+                android:onClick="candianBacon"
+                android:text="can bacon"/>
 
         </LinearLayout>
 
@@ -71,8 +71,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="bacon"
-                android:onClick="bacon"/>
+                android:onClick="bacon"
+                android:text="bacon"/>
 
             <Button
                 android:id="@+id/hamburger"
@@ -80,8 +80,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="hamburger"
-                android:onClick="hamburger"/>
+                android:onClick="hamburger"
+                android:text="hamburger"/>
 
             <Button
                 android:id="@+id/chicken"
@@ -89,8 +89,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="chicken"
                 android:onClick="chicken"
+                android:text="chicken"
                 />
 
         </LinearLayout>
@@ -109,8 +109,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="mushrooms"
-                android:onClick="mushrooms"/>
+                android:onClick="mushrooms"
+                android:text="mushrooms"/>
 
             <Button
                 android:id="@+id/olives"
@@ -118,8 +118,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="olives"
-                android:onClick="olives"/>
+                android:onClick="olives"
+                android:text="olives"/>
 
             <Button
                 android:id="@+id/onions"
@@ -127,8 +127,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="onions"
-                android:onClick="onions"/>
+                android:onClick="onions"
+                android:text="onions"/>
 
         </LinearLayout>
 
@@ -146,8 +146,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="peppers"
-                android:onClick="peppers"/>
+                android:onClick="peppers"
+                android:text="peppers"/>
 
             <Button
                 android:id="@+id/pineapple"
@@ -155,8 +155,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="pineapple"
-                android:onClick="pineapple"/>
+                android:onClick="pineapple"
+                android:text="pineapple"/>
 
             <Button
                 android:id="@+id/tomatoes"
@@ -164,8 +164,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/toppingsButtonMargin"
                 android:layout_weight="1"
-                android:text="tomatoes"
                 android:onClick="tomatoes"
+                android:text="tomatoes"
                 />
 
         </LinearLayout>
@@ -208,8 +208,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/enter"
-                    android:onClick="addCustomTopping"/>
+                    android:onClick="addCustomTopping"
+                    android:text="@string/enter"/>
 
             </LinearLayout>
 
