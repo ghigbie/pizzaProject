@@ -9,13 +9,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 /**
  * Created by georgehigbie on 2/2/17.
  */
 
 public class CustomListAdapterToppings extends ArrayAdapter<String> {
 
-    public CustomListAdapterToppings(Context context, String[] values){
+    public CustomListAdapterToppings(Context context, ArrayList<String> values){
         super(context, R.layout.topping_list_layout, values);
     }
 

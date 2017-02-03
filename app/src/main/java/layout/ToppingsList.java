@@ -8,9 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.geogehigbie.pizzabuilder.CustomListAdapter;
 import com.geogehigbie.pizzabuilder.CustomListAdapterToppings;
 import com.geogehigbie.pizzabuilder.R;
+
+import java.util.ArrayList;
 
 
 public class ToppingsList extends Fragment {
@@ -23,8 +24,10 @@ public class ToppingsList extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_toppings_list, container, false);
 
+        ArrayList<String> toppingsArrayList = getArguments().getStringArrayList("toppingsArraysList");
+
         ListView listView = (ListView) view.findViewById(R.id.toppingsListView);
-        ListAdapter listAdapter = new CustomListAdapterToppings(getActivity().getApplicationContext(), )
+        ListAdapter listAdapter = new CustomListAdapterToppings(getActivity().getApplicationContext(), toppingsArrayList);
 
         return view;
     }
