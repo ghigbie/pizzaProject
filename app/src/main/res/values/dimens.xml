@@ -13,4 +13,5 @@
     <dimen name="buttonMargin">20dp</dimen>
     <dimen name="textMarginFragments">20dp</dimen>
     <dimen name="toppingsButtonMargin">5dp</dimen>
+    <dimen name="toppingsItemListMargin">20dp</dimen>
 </resources>
