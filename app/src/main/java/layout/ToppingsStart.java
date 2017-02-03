@@ -33,7 +33,7 @@ public class ToppingsStart extends Fragment {
 
 
     private void addOnClickListenerDone() {
-        Button doneButton = (Button) getActivity().findViewById(R.id.toppingsDone);
+        Button doneButton = (Button) getView().findViewById(R.id.toppingsDone);
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
