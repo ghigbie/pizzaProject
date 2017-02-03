@@ -92,6 +92,7 @@ public class ToppingsStart extends Fragment {
                 String newCustomTopping = editText.getText().toString();
                 Toast.makeText(getContext(), newCustomTopping + " was added to your pizza.", Toast.LENGTH_SHORT);
                 toppingsArrayList.add(newCustomTopping);
+                editText.getText().clear();
 
             }
         });

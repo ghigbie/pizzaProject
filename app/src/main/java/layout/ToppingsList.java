@@ -28,6 +28,7 @@ public class ToppingsList extends Fragment {
 
         ListView listView = (ListView) view.findViewById(R.id.toppingsListView);
         ListAdapter listAdapter = new CustomListAdapterToppings(getActivity().getApplicationContext(), toppingsArrayList);
+        listView.setAdapter(listAdapter);
 
         return view;
     }
