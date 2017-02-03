@@ -24,6 +24,7 @@ public class ToppingsList extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_toppings_list, container, false);
 
+
         ArrayList<String> toppingsArrayList = getArguments().getStringArrayList("toppingsArraysList");
 
         ListView listView = (ListView) view.findViewById(R.id.toppingsListView);
