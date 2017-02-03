@@ -41,12 +41,21 @@ public class ToppingsStart extends Fragment {
         });
 
         Button pepperoni = (Button) getActivity().findViewById(R.id.pepperoni);
-        Button saussage = (Button) getActivity().findViewById(R.id.sausage);
+        Button sausage = (Button) getActivity().findViewById(R.id.sausage);
         Button canadianBacon = (Button) getActivity().findViewById(R.id.canadian);
         Button bacon = (Button) getActivity().findViewById(R.id.bacon);
         Button hamburger = (Button) getActivity().findViewById(R.id.hamburger);
         Button chicken = (Button) getActivity().findViewById(R.id.chicken);
-        Button saussage = (Button) getActivity().findViewById(R.id.sausage);
+        Button mushrooms = (Button) getActivity().findViewById(R.id.mushrooms);
+        Button olives = (Button) getActivity().findViewById(R.id.olives);
+        Button onions = (Button) getActivity().findViewById(R.id.onions);
+        Button peppers = (Button) getActivity().findViewById(R.id.peppers);
+        Button pineapple = (Button) getActivity().findViewById(R.id.pineapple);
+        Button tomatoes = (Button) getActivity().findViewById(R.id.tomatoes);
+
+        Button[] buttons = {pepperoni, sausage, canadianBacon, bacon, hamburger, chicken,
+                mushrooms, olives, onions, peppers, pineapple, tomatoes};
+
 
     }
 
