@@ -23,12 +23,12 @@ public class CustomListAdapterToppings extends ArrayAdapter<String> {
     @Override
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-        View customView = layoutInflater.inflate(R.layout.row_layout, parent, false);
+        View customView = layoutInflater.inflate(R.layout.topping_list_layout, parent, false);
 
         String item = getItem(position);
 
-        TextView textView = (TextView) customView.findViewById(R.id.textViewCustom);
-        ImageView imageView = (ImageView) customView.findViewById(R.id.imageViewCustom);
+        TextView textView = (TextView) customView.findViewById(R.id.textViewCustomToppings);
+        ImageView imageView = (ImageView) customView.findViewById(R.id.imageViewCustomToppings);
 
         textView.setText(item);
         imageView.setImageResource(R.drawable.mushroom);

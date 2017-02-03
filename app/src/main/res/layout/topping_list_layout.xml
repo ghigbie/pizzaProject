@@ -7,7 +7,7 @@
     android:weightSum="4">
 
     <ImageView
-        android:id="@+id/imageViewToppingCustomToppings"
+        android:id="@+id/imageViewCustomToppings"
         android:layout_width="@dimen/imageCustomViewSize"
         android:layout_height="@dimen/imageCustomViewSize"
         android:layout_margin="@dimen/imageCustomViewMargin"
