@@ -5,6 +5,7 @@
     <string name="question_start">Would you like to build a pizza?</string>
     <string name="see_list">See List of Existing Pizzas</string>
     <string name="list_item">Name of Pizza</string>
+    <string name="list_item_topping">Name of Topping</string>
     <string name="what_toppings">What toppings would you like to add?</string>
     <string name="or_add">OR add the custom toppings that you want below, and then press ENTER:</string>
     <string name="yes">Yes</string>
