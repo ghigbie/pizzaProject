@@ -74,7 +74,7 @@ public class ToppingsStart extends Fragment {
          }
      }
 
-    private
+    private void addDoneOnClickListener(){
         Button customToppingAdd = (Button) getActivity().findViewById(R.id.toppingsEnter);
         customToppingAdd.setOnClickListener(new View.OnClickListener(){
             @Override
