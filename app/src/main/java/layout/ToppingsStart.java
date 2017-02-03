@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.geogehigbie.pizzabuilder.R;
@@ -63,7 +64,7 @@ public class ToppingsStart extends Fragment {
                 @Override
                 public void onClick(View view) {
                     String newTopping = buttons[j].getText().toString();
-                    Toast.makeText(getContext(), newTopping + " was added to your Pizza", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), newTopping + " was added to your pizza", Toast.LENGTH_SHORT).show();
                     toppingsArrayList.add(newTopping);
                 }
             });
@@ -73,7 +74,10 @@ public class ToppingsStart extends Fragment {
         customToppingAdd.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
+                EditText editText = (EditText) getActivity().findViewById(R.id.toppingsEditText);
+                String newCustomTopping = editText.getText().toString();
+                Toast.makeText(getContext(), newCustomTopping + " was added to your pizza.", Toast.LENGTH_SHORT);
+                toppingsArrayList.add(newCustomTopping);
             }
         });
     }
