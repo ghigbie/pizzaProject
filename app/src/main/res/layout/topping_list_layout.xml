@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroud"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/imageViewToppingCustom"
+        android:layout_width="@dimen/imageCustomViewSize"
+        android:layout_height="@dimen/imageCustomViewSize"
+        android:layout_margin="@dimen/imageCustomViewMargin"
+        android:layout_weight="1"
+        android:src="@drawable/mushroom" />
+
+    <TextView
+        android:id="@+id/textViewCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textMargin"
+        android:layout_weight="3"
+        android:text="@string/list_item"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorTextTitle"
+        android:textStyle="bold" />
 
 </LinearLayout>
