@@ -36,11 +36,11 @@ public class PizzaBuilderStart extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager(); //this allows access to all buttons
         final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-        Button yesButton = (Button) findViewById(R.id.yes_start);
-        Button noButton = (Button) findViewById(R.id.no_start);
+        Button enterButton = (Button) findViewById(R.id.enter_start);
+       // Button noButton = (Button) findViewById(R.id.no_start);
         Button seeListPizzasButton = (Button) findViewById(R.id.seeListOfPizza);
 
-        yesButton.setOnClickListener(new View.OnClickListener() {
+        enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 fragmentTransaction.add(R.id.fragment_container, new ToppingsStart());
@@ -49,12 +49,12 @@ public class PizzaBuilderStart extends AppCompatActivity {
             }
         });
 
-        noButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+//        noButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
 
         seeListPizzasButton.setOnClickListener(new View.OnClickListener() {
             @Override
