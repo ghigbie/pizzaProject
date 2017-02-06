@@ -11,6 +11,9 @@ public class Pizza {
     String name;
     ArrayList listOfToppings;
 
-
+    public Pizza(String name, ArrayList listOfToppings){
+        this.name = name;
+        this.listOfToppings = listOfToppings;
+    }
 
 }
