@@ -30,7 +30,7 @@ public class ToppingsList extends Fragment {
 
         ListView listView = (ListView) view.findViewById(R.id.toppingsListView);
         ListAdapter listAdapter = new CustomListAdapterToppings(getActivity().getApplicationContext(), toppingsArrayList);
-
+        //below is a standard array adapter
         //ArrayAdapter<String> arrayAdapter= new ArrayAdapter<String>(getActivity().getApplicationContext(), android.R.layout.simple_list_item_1, toppingsArrayList);
         listView.setAdapter(listAdapter);
 
