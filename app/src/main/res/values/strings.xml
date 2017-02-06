@@ -12,6 +12,7 @@
     <string name="no">No</string>
     <string name="enter">ENTER</string>
     <string name="done_toppings">Done Adding Toppings</string>
+    <string name="pizza_name">Give your pizza a name, i.e., Max or Fluffy</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
