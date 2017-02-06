@@ -18,8 +18,7 @@ public class PizzaList extends Fragment {
     View view;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_pizza_list, container, false);
 
         ArrayList<String> pizzaArrayList = getArguments().getStringArrayList("pizzaArraysList");
@@ -31,6 +30,5 @@ public class PizzaList extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
-
 
 }
