@@ -23,6 +23,18 @@ public class CustomListAdapterToppings extends ArrayAdapter<String> {
 
     @NonNull
     @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+
+
+
+
+
+
+        return super.getView(position, convertView, parent);
+    }
+
+    @NonNull
+    @Override
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
         LayoutInflater layoutInflater = LayoutInflater.from(getContext());
         View customView = layoutInflater.inflate(R.layout.topping_list_layout, parent, false);
