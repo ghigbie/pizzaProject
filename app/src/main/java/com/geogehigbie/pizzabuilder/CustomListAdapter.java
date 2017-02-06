@@ -32,6 +32,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         ImageView imageView = (ImageView) customView.findViewById(R.id.imageViewCustom);
 
         textView.setText(item);
+        textView.setTextColor(Integer.parseInt("#ffffff"));
         imageView.setImageResource(R.drawable.pizza_image);
 
         return customView;

@@ -44,11 +44,13 @@ public class ToppingsStart extends Fragment {
                 ToppingsList newToppingsList = new ToppingsList(); //this creates a new fragment
                 Bundle bundle = new Bundle(); //this creates a new bundle
                 bundle.putStringArrayList("toppingsArraysList", toppingsArrayList); //this puts arrayList in bundel
-                newToppingsList.setArguments(bundle); //this adds bundle to fragment
+//                newToppingsList.setArguments(bundle);
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.add(R.id.fragment_container, new ToppingsList());
+                ToppingsList toppingsList = new ToppingsList();
+                toppingsList.setArguments(bundle); //this adds bundle to fragment
+                fragmentTransaction.add(R.id.fragment_container, toppingsList);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
