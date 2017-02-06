@@ -18,35 +18,26 @@ import java.util.ArrayList;
 public class CustomListAdapterToppings extends ArrayAdapter<String> {
 
     public CustomListAdapterToppings(Context context, ArrayList<String> values){
-        super(context, R.layout.topping_list_layout, values);
+        super(context, 0, values);
     }
 
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        String itemInList = getItem(position);
 
+        if(convertView == null){
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.topping_list_layout, parent, false);
+        }
 
+        TextView textView = (TextView) convertView.findViewById(R.id.textViewCustomToppings);
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.imageViewCustomToppings);
 
-
-
-
-        return super.getView(position, convertView, parent);
-    }
-
-    @NonNull
-    @Override
-    public View getDropDownView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater layoutInflater = LayoutInflater.from(getContext());
-        View customView = layoutInflater.inflate(R.layout.topping_list_layout, parent, false);
-
-        String item = getItem(position);
-
-        TextView textView = (TextView) customView.findViewById(R.id.textViewCustomToppings);
-        ImageView imageView = (ImageView) customView.findViewById(R.id.imageViewCustomToppings);
-
-        textView.setText(item);
+        textView.setText(itemInList);
         imageView.setImageResource(R.drawable.mushroom);
 
-        return customView;
+        return convertView;
     }
+
+
 }
