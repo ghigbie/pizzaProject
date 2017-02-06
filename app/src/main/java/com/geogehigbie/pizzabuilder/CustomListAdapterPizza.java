@@ -22,6 +22,9 @@ public class CustomListAdapterPizza extends ArrayAdapter<String> {
         super(context, 0, values);
     }
 
+
+    @NonNull
+    @Override
     public View getView(int position, View convertView, ViewGroup parent){
         String pizzaInList = getItem(position);
 
@@ -29,26 +32,15 @@ public class CustomListAdapterPizza extends ArrayAdapter<String> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.pizza_list_layout, parent, false);
         }
 
-    }
+        TextView textView = (TextView) convertView.findViewById(R.id.textViewCustomPizza);
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.imageViewCustomPizza);
 
-
-    @NonNull
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        String itemInList = getItem(position);
-
-        if(convertView == null){
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.topping_list_layout, parent, false);
-        }
-
-        TextView textView = (TextView) convertView.findViewById(R.id.textViewCustomToppings);
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.imageViewCustomToppings);
-
-        textView.setText(itemInList);
-        imageView.setImageResource(R.drawable.mushroom);
+        textView.setText(pizzaInList);
+        imageView.setImageResource(R.drawable.pizza_image);
 
         return convertView;
     }
+
 
 }
 
