@@ -45,13 +45,8 @@ public class ToppingsList extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> pizzaNameArrayList = getArguments().getStringArrayList("pizzaNamesArrayList");
-                Bundle bundle2 = new Bundle();
-                PizzaList pizzaList = new PizzaList();
-
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                pizzaList.setArguments(bundle2);
                 fragmentTransaction.add(R.id.fragment_container, pizzaList);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
