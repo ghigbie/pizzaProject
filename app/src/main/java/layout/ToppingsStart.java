@@ -45,7 +45,7 @@ public class ToppingsStart extends Fragment {
             public void onClick(View view) {
                 Bundle bundle = new Bundle(); //this creates a new bundle
                 bundle.putStringArrayList("toppingsArraysList", toppingsArrayList); //this puts arrayList in bundle
-                bundle.putStringArrayList("pizzaNamesArrayList", pizzaNamesArrayList);
+//                bundle.putStringArrayList("pizzaNamesArrayList", pizzaNamesArrayList);
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
