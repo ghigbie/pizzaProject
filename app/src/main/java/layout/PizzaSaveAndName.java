@@ -19,6 +19,7 @@ public class PizzaSaveAndName extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_pizza_save_and_name, container, false);
+        setClickListener();
 
         // Inflate the layout for this fragment
         return view;
@@ -31,6 +32,7 @@ public class PizzaSaveAndName extends Fragment {
             @Override
             public void onClick(View view) {
                 getPizzaName();
+                buttonVisible();
             }
         });
     }
@@ -44,6 +46,22 @@ public class PizzaSaveAndName extends Fragment {
             Toast toast = Toast.makeText(getActivity().getApplicationContext(), "Please give this pizza a name.", Toast.LENGTH_SHORT);
             toast.show();
         }
+    }
+
+    public void buttonVisible(){
+        Button button = (Button) view.findViewById(R.id.see_pizza_list);
+        button.setVisibility(View.VISIBLE);
+    }
+
+    public void setOnClickListenerOnInvisible(){
+        Button button = (Button) view.findViewById(R.id.see_pizza_list);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
     }
 
 
