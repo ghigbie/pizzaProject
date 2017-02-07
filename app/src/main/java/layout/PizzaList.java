@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -32,9 +31,5 @@ public class PizzaList extends Fragment {
         return view;
     }
 
-    public void setOnClickListener(){
-        Button button = (Button) view.findViewById(R.id.)
-
-    }
 
 }
