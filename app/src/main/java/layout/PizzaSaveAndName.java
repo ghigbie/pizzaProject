@@ -11,14 +11,19 @@ import android.widget.Toast;
 
 import com.geogehigbie.pizzabuilder.R;
 
+import java.util.ArrayList;
+
 
 public class PizzaSaveAndName extends Fragment {
-
+    private ArrayList<String> pizzaNamesArrayList = new ArrayList<String>();
+    private ArrayList<String> toppingsArrayList;
     View view;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_pizza_save_and_name, container, false);
+        toppingsArrayList = getArguments().getStringArrayList("toppingsArrayList");
         setClickListener();
 
         // Inflate the layout for this fragment
@@ -42,6 +47,7 @@ public class PizzaSaveAndName extends Fragment {
         EditText editText = (EditText) view.findViewById(R.id.edit_text_pizza_name);
         if (editText != null) {
             String pizzaName = editText.getText().toString();
+            pizzaNamesArrayList.add(pizzaName);
         } else {
             Toast toast = Toast.makeText(getActivity().getApplicationContext(), "Please give this pizza a name.", Toast.LENGTH_SHORT);
             toast.show();
@@ -51,6 +57,14 @@ public class PizzaSaveAndName extends Fragment {
     public void buttonVisible(){
         Button button = (Button) view.findViewById(R.id.see_pizza_list);
         button.setVisibility(View.VISIBLE);
+        setOnClickListenerOnInvisible();
+    }
+
+    public void switchActivity(){
+//        Intent intent = new Intent(this, ListOfPizzas.class);
+//        intent.putStringArrayListExtra("toppingsArrayList", toppingsArrayList);
+//        intent.putStringArrayListExtra("pizzaNamesArrayList", pizzaNamesArrayList);
+//        startActivity(intent);
     }
 
     public void setOnClickListenerOnInvisible(){
@@ -58,6 +72,7 @@ public class PizzaSaveAndName extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                switchActivity();
 
             }
         });
