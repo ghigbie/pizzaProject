@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 import layout.PizzaList;
 import layout.ToppingsStart;
 
@@ -49,15 +51,23 @@ public class PizzaBuilderStart extends AppCompatActivity {
             enterButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    //creating parameters to be passed into new Object - pizza
                     EditText editText = (EditText) findViewById(R.id.edit_text_pizza_name);
                     String name = editText.getText().toString();
+
+                    ArrayList<String> toppingsArrayList = new ArrayList<String>();
 
                     seeListPizzasButton.setVisibility(View.VISIBLE);
 
 
-                    Pizza pizzaNew = new Pizza(name, )
+                    Pizza pizzaNew = new Pizza(name, toppingsArrayList);
 
-                    fragmentTransaction.add(R.id.fragment_container, new ToppingsStart());
+                    Bundle bundle = new Bundle();
+                    bundle.putStringArrayList("toppingsArraysList", toppingsArrayList);
+                    ToppingsStart toppingsStart = new ToppingsStart(); //creates a new fragment
+                    toppingsStart.setArguments(bundle);
+
+                    fragmentTransaction.add(R.id.fragment_container, toppingsStart);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
                 }
