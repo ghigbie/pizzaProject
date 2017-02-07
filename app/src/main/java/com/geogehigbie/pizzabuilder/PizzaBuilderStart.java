@@ -68,10 +68,14 @@ public class PizzaBuilderStart extends AppCompatActivity {
 
                     Pizza pizzaNew = new Pizza(name, toppingsArrayList);
 
-                    Bundle bundle = new Bundle();
-                    bundle.putStringArrayList("toppingsArraysList", toppingsArrayList);
+                    Bundle bundle1 = new Bundle();
+                    bundle1.putStringArrayList("toppingsArraysList", toppingsArrayList);
                     ToppingsStart toppingsStart = new ToppingsStart(); //creates a new fragment
-                    toppingsStart.setArguments(bundle);
+                    toppingsStart.setArguments(bundle1);
+
+                    Bundle bundle2 = new Bundle();
+                    bundle2.putStringArrayList("pizzaNamesArrayList", pizzaNamesArrayList);
+                    toppingsStart.setArguments(bundle2);
 
                     fragmentTransaction.add(R.id.fragment_container, toppingsStart);
                     fragmentTransaction.addToBackStack(null);
