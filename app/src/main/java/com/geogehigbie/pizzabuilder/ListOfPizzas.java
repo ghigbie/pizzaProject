@@ -3,8 +3,11 @@ package com.geogehigbie.pizzabuilder;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -29,6 +32,20 @@ public class ListOfPizzas extends AppCompatActivity {
         CustomListAdapterPizza listAdapterPizza = new CustomListAdapterPizza(this, pizzaNamesArrayList);
         listView.setAdapter(listAdapterPizza);
 
+        listView.setOnItemClickListener(
+                new AdapterView.OnItemClickListener(){
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        fragmentTransaction.add()
+                        fragmentTransaction.addToBackStack(null);
+
+                    }
+                }
+
+        );
+
         setOnClickListener();
     }
 
@@ -42,5 +59,6 @@ public class ListOfPizzas extends AppCompatActivity {
             }
         });
     }
+
 
 }
