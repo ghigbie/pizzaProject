@@ -5,7 +5,7 @@
     android:background="@color/colorBackgroud">
 
     <ListView
-        android:id="@+id/pizzaListView2"
+        android:id="@+id/pizzaListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>

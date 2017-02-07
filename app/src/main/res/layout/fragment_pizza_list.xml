@@ -7,7 +7,7 @@
 
 
     <ListView
-        android:id="@+id/pizzaListView"
+        android:id="@+id/pizzaListView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>
