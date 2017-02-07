@@ -24,20 +24,20 @@
                 android:id="@+id/instructions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
+                android:layout_margin="@dimen/textMargin"
                 android:text="@string/instructions"
                 android:textAppearance="?android:textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_margin="@dimen/textMargin"
-                android:layout_centerHorizontal="true"/>
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/pizzaImage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/imageMargin"
-                android:src="@drawable/pizza_image"
-                android:layout_centerHorizontal="true"/>
+                android:src="@drawable/pizza_image"/>
 
         </RelativeLayout>
 
