@@ -23,6 +23,8 @@
         <activity android:name=".MainActivity"></activity>
 
         <activity android:name=".PizzaBuilderStart"></activity>
+
+        <activity android:name=".ListOfPizzas"></activity>
     </application>
 
 </manifest>
