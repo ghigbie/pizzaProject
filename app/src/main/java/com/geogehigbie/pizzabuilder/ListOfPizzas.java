@@ -12,8 +12,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import layout.ToppingsListTwo;
-
 
 public class ListOfPizzas extends AppCompatActivity {
     private ArrayList<String> toppingsArrayList;
@@ -26,7 +24,7 @@ public class ListOfPizzas extends AppCompatActivity {
         setContentView(R.layout.list_of_pizzas);
 
         Intent intent = getIntent();
-//        toppingsArrayList = intent.getStringArrayListExtra("toppingsArrayList");
+        toppingsArrayList = intent.getStringArrayListExtra("toppingsArrayList");
         pizzaNamesArrayList = intent.getStringArrayListExtra("pizzaNamesArrayList");
 //        pizzaArrayList = (ArrayList<Pizza>) intent.getSerializableExtra("pizzaArrayList");
 
@@ -42,27 +40,27 @@ public class ListOfPizzas extends AppCompatActivity {
                 new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        ToppingsListTwo toppingsListTwo = new ToppingsListTwo();
-                        Bundle bundle = new Bundle();
-                        bundle.putStringArrayList("toppingsArrayList", toppingsArrayList);
-                        toppingsListTwo.setArguments(bundle);
+//                        ToppingsListTwo toppingsListTwo = new ToppingsListTwo();
+//                        Bundle bundle = new Bundle();
+//                        bundle.putStringArrayList("toppingsArrayList", toppingsArrayList);
+//                        toppingsListTwo.setArguments(bundle);
 //
 //                        FragmentManager fragmentManager = getSupportFragmentManager();
 //                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 //                        fragmentTransaction.add(R.id.fragment_container2, toppingsListTwo);
 //                        fragmentTransaction.addToBackStack(null);
 //                        fragmentTransaction.commit();
-                        Toast toast = Toast.makeText(getApplicationContext(), )
-                        for(int j = 0; j < toppingsArrayList.size(); j++){
-
+                        for(int j = 0; j < toppingsArrayList.size(); j++) {
+                            Toast toast = Toast.makeText(getApplicationContext(), toppingsArrayList.get(j), Toast.LENGTH_SHORT);
+                            toast.show();
                         }
-
                     }
                 }
         );
 
         setOnClickListener();
     }
+
 
     public void setOnClickListener(){
         Button button = (Button) findViewById(R.id.createNewPizza1);
