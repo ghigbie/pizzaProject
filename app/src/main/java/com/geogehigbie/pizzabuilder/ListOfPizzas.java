@@ -26,12 +26,9 @@ public class ListOfPizzas extends AppCompatActivity {
         Intent intent = getIntent();
         toppingsArrayList = intent.getStringArrayListExtra("toppingsArrayList");
         pizzaNamesArrayList = intent.getStringArrayListExtra("pizzaNamesArrayList");
-//        pizzaArrayList = (ArrayList<Pizza>) intent.getSerializableExtra("pizzaArrayList");
+ //       pizzaArrayList = (ArrayList<Pizza>) intent.getSerializableExtra("pizzaArrayList");
 
-//        for(int i = 0; i < pizzaArrayList.size(); i++){
-//            String newPizzaName = pizzaArrayList.get(i).getName();
-//            pizzaNamesArrayList.add(newPizzaName);
-//        }
+
         ListView listView = (ListView) findViewById(R.id.pizzaListView);
         CustomListAdapterPizza listAdapterPizza = new CustomListAdapterPizza(this, pizzaNamesArrayList);
         listView.setAdapter(listAdapterPizza);
@@ -40,16 +37,7 @@ public class ListOfPizzas extends AppCompatActivity {
                 new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                        ToppingsListTwo toppingsListTwo = new ToppingsListTwo();
-//                        Bundle bundle = new Bundle();
-//                        bundle.putStringArrayList("toppingsArrayList", toppingsArrayList);
-//                        toppingsListTwo.setArguments(bundle);
-//
-//                        FragmentManager fragmentManager = getSupportFragmentManager();
-//                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                        fragmentTransaction.add(R.id.fragment_container2, toppingsListTwo);
-//                        fragmentTransaction.addToBackStack(null);
-//                        fragmentTransaction.commit();
+
                         for(int j = 0; j < toppingsArrayList.size(); j++) {
                             Toast toast = Toast.makeText(getApplicationContext(), toppingsArrayList.get(j), Toast.LENGTH_SHORT);
                             toast.show();
@@ -68,6 +56,7 @@ public class ListOfPizzas extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("pizzaNamesArrayList", pizzaNamesArrayList);
                 startActivity(intent);
             }
         });

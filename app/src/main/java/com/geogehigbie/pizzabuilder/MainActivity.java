@@ -9,14 +9,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+
 import layout.ToppingsStart;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ArrayList<String> pizzaNamesArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        pizzaNamesArrayList = getIntent().getStringArrayListExtra("pizzaNamesArrayList");
 
         centerActionBar();
         addOnClickListeners();
@@ -32,9 +38,14 @@ public class MainActivity extends AppCompatActivity {
         pizzaImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ToppingsStart toppingsStart = new ToppingsStart();
+                Bundle bundle = new Bundle();
+                bundle.putStringArrayList("pizzaNamesArrayList", pizzaNamesArrayList);
+                toppingsStart.setArguments(bundle);
+
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.add(R.id.fragment_container, new ToppingsStart());
+                fragmentTransaction.add(R.id.fragment_container, toppingsStart);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
