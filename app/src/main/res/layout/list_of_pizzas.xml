@@ -11,7 +11,7 @@
     </ListView>
 
     <Button
-        android:id="@+id/createNewPizza"
+        android:id="@+id/createNewPizza1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
