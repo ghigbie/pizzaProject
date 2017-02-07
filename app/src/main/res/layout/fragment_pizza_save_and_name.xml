@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackgroud"
     tools:context="layout.PizzaSaveAndName">
 
     <RelativeLayout
@@ -39,17 +40,6 @@
             android:layout_weight="1"
             android:text="@string/enter" />
 
-
-
-        <Button
-            android:id="@+id/seeListOfPizza"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/enter_start"
-            android:layout_centerInParent="true"
-            android:text="@string/see_list"
-            android:visibility="invisible"
-            />
 
     </RelativeLayout>
 
