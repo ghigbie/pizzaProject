@@ -41,10 +41,8 @@ public class ToppingsStart extends Fragment {
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ToppingsList newToppingsList = new ToppingsList(); //this creates a new fragment
                 Bundle bundle = new Bundle(); //this creates a new bundle
                 bundle.putStringArrayList("toppingsArraysList", toppingsArrayList); //this puts arrayList in bundle
-//                newToppingsList.setArguments(bundle);
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
