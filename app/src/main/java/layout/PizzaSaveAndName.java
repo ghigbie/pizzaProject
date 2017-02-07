@@ -71,13 +71,9 @@ public class PizzaSaveAndName extends Fragment {
                 intent.putStringArrayListExtra("toppingsArrayList", toppingsArrayList);
                 intent.putStringArrayListExtra("pizzaNamesArrayList", pizzaNamesArrayList);
                 startActivity(intent);
-
             }
         });
 
     }
-
-
-
 
 }
