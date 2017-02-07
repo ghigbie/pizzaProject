@@ -24,10 +24,18 @@ import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 public class PizzaBuilderStart extends AppCompatActivity {
 
+    ArrayList<String> toppingsArrayList;
+    ArrayList<String> pizzaNamesArrayList;
+    ArrayList<Pizza> pizzasArrayList;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pizza_builder_start);
+
+        toppingsArrayList = new ArrayList<String>();
+        pizzaNamesArrayList = new ArrayList<String>();
+        pizzasArrayList = new ArrayList<Pizza>();
 
         centerActionBar();
         addClickListeners();
@@ -54,11 +62,9 @@ public class PizzaBuilderStart extends AppCompatActivity {
                     //creating parameters to be passed into new Object - pizza
                     EditText editText = (EditText) findViewById(R.id.edit_text_pizza_name);
                     String name = editText.getText().toString();
-
-                    ArrayList<String> toppingsArrayList = new ArrayList<String>();
+                    pizzaNamesArrayList.add(name);//adds name of pizza to button
 
                     seeListPizzasButton.setVisibility(View.VISIBLE);
-
 
                     Pizza pizzaNew = new Pizza(name, toppingsArrayList);
 
@@ -87,7 +93,12 @@ public class PizzaBuilderStart extends AppCompatActivity {
         seeListPizzasButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fragmentTransaction.add(R.id.fragment_container, new PizzaList());
+                PizzaList pizzaList = new PizzaList();
+                Bundle bundle = new Bundle();
+                bundle.putStringArrayList("pizzaNamesArrayList", pizzaNamesArrayList);
+
+                fragmentTransaction.add(R.id.fragment_container, pizzaList);
+                pizzaList.setArguments(bundle); //sets the array list to be transfered to the pizza names page
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
