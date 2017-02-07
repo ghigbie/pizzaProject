@@ -20,11 +20,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
+        </activity>
 
-        <activity android:name=".PizzaBuilderStart"></activity>
+        <activity android:name=".PizzaBuilderStart"
+                  android:screenOrientation="portrait">
+        </activity>
 
-        <activity android:name=".ListOfPizzas"></activity>
+        <activity android:name=".ListOfPizzas"
+                  android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
