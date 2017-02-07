@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class ToppingsStart extends Fragment {
 
     View view;
-    private ArrayList<String> toppingsArrayList;
+    private ArrayList<String> toppingsArrayList = new ArrayList<String>();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,7 +37,6 @@ public class ToppingsStart extends Fragment {
 
 
     private void addOnClickListenerDone() {
-        toppingsArrayList = getArguments().getStringArrayList("toppingsArraysList");
         Button doneButton = (Button) view.findViewById(R.id.toppingsDone);
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override

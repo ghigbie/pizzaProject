@@ -12,7 +12,7 @@
     <string name="no">No</string>
     <string name="enter">ENTER</string>
     <string name="done_toppings">Done Adding Toppings</string>
-    <string name="pizza_name">Jeff's Pizza...</string>
+    <string name="pizza_name">Jeff\'s Pizza...</string>
     <string name="save_pizza_and_name">Save Pizza and Give It a Name</string>
 
     <!-- TODO: Remove or change this placeholder text -->
