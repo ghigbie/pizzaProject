@@ -16,6 +16,19 @@ public class Pizza {
         this.listOfToppings = listOfToppings;
     }
 
+    public ArrayList getListOfToppings() {
+        return listOfToppings;
+    }
 
+    public void setListOfToppings(ArrayList listOfToppings) {
+        this.listOfToppings = listOfToppings;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
