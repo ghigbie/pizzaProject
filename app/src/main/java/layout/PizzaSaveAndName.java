@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.geogehigbie.pizzabuilder.ListOfPizzas;
+import com.geogehigbie.pizzabuilder.Pizza;
 import com.geogehigbie.pizzabuilder.R;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 public class PizzaSaveAndName extends Fragment {
     private ArrayList<String> pizzaNamesArrayList = new ArrayList<String>();
     private ArrayList<String> toppingsArrayList;
+    private ArrayList<Pizza> pizzaArrayList = new ArrayList<Pizza>();
     View view;
 
     @Override
@@ -73,6 +75,12 @@ public class PizzaSaveAndName extends Fragment {
                 startActivity(intent);
             }
         });
+
+    }
+
+    public void createPizzaObject(){
+
+        pizzaArrayList.add()
 
     }
 
