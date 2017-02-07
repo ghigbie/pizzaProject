@@ -64,6 +64,7 @@ public class PizzaBuilderStart extends AppCompatActivity {
             });
         }else{
             Toast toast = Toast.makeText(this, "Please give your pizza a name to begin", Toast.LENGTH_SHORT);
+            toast.show();
         }
 
 //        noButton.setOnClickListener(new View.OnClickListener() {
