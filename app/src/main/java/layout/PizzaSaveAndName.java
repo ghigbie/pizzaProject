@@ -49,13 +49,19 @@ public class PizzaSaveAndName extends Fragment {
     public void getPizzaName() {
 
         EditText editText = (EditText) view.findViewById(R.id.edit_text_pizza_name);
+        String pizzaName;
+        Pizza pizza;
         if (editText != null) {
-            String pizzaName = editText.getText().toString();
+            pizzaName = editText.getText().toString();
             pizzaNamesArrayList.add(pizzaName);
+            pizza = new Pizza(pizzaName, toppingsArrayList);
+            pizzaArrayList.add(pizza);
         } else {
             Toast toast = Toast.makeText(getActivity().getApplicationContext(), "Please give this pizza a name.", Toast.LENGTH_SHORT);
             toast.show();
         }
+
+
     }
 
     public void buttonVisible(){
