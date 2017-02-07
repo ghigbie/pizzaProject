@@ -16,12 +16,12 @@
         </ListView>
 
         <Button
-            android:id="@+id/seeListOfPizzasToppingsList"
+            android:id="@+id/saveAndNamePizza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_margin="@dimen/buttonMargin"
-            android:text="@string/see_list"
+            android:text="@string/save_pizza_and_name"
             android:layout_alignParentBottom="true"
             />
 

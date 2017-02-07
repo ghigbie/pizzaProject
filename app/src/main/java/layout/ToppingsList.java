@@ -19,6 +19,8 @@ import java.util.ArrayList;
 
 public class ToppingsList extends Fragment {
 
+    PizzaName
+
     View view;
 
     @Override
@@ -41,13 +43,13 @@ public class ToppingsList extends Fragment {
 
 
     public void setOnClickListener(){
-        Button button = (Button) view.findViewById(R.id.seeListOfPizzasToppingsList);
+        Button button = (Button) view.findViewById(R.id.saveAndNamePizza);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.add(R.id.fragment_container, pizzaList);
+                fragmentTransaction.add(R.id.fragment_container, );
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
