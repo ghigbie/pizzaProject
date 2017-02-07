@@ -20,6 +20,7 @@ public class ToppingsStart extends Fragment {
 
     View view;
     private ArrayList<String> toppingsArrayList = new ArrayList<String>();
+    private ArrayList<String> pizzaNamesArrayList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +28,7 @@ public class ToppingsStart extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_toppings_start, container, false);
 
+        pizzaNamesArrayList = getArguments().getStringArrayList("pizzaNamesArrayList");
 
         addOnClickListenerDone();
         addOnClickListenerToppings();
@@ -43,6 +45,7 @@ public class ToppingsStart extends Fragment {
             public void onClick(View view) {
                 Bundle bundle = new Bundle(); //this creates a new bundle
                 bundle.putStringArrayList("toppingsArraysList", toppingsArrayList); //this puts arrayList in bundle
+                bundle.putStringArrayList("pizzaNamesArrayList", pizzaNamesArrayList);
 
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

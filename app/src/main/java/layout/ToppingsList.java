@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 public class ToppingsList extends Fragment {
     private ArrayList<String> toppingsArrayList;
+    private ArrayList<String> pizzaNamesArrayList;
     private View view;
 
     @Override
