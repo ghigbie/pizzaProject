@@ -17,7 +17,8 @@
             android:layout_margin="@dimen/textMarginFragments"
             android:text="@string/question_start"
             android:textAppearance="?android:textAppearanceLarge"
-            android:textStyle="bold" />
+            android:textColor="@color/colorTextTitle"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/edit_text_pizza_name"
