@@ -38,10 +38,10 @@
         android:id="@+id/seeListOfPizzas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/see_list"
+        android:layout_below="@+id/linearLayoutCustomToppings"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/buttonMargin"
-        android:layout_below="@+id/linearLayoutCustomToppings"
+        android:text="@string/see_list"
         />
 
 </RelativeLayout>
