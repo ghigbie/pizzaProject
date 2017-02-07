@@ -30,9 +30,8 @@ public class PizzaSaveAndName extends Fragment {
         toppingsArrayList = getArguments().getStringArrayList("toppingsArrayList");
         setClickListener();
 
-        // Inflate the layout for this fragment
-        return view;
 
+        return view;
     }
 
     public void setClickListener(){
@@ -60,8 +59,6 @@ public class PizzaSaveAndName extends Fragment {
             Toast toast = Toast.makeText(getActivity().getApplicationContext(), "Please give this pizza a name.", Toast.LENGTH_SHORT);
             toast.show();
         }
-
-
     }
 
     public void buttonVisible(){
@@ -75,9 +72,11 @@ public class PizzaSaveAndName extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(getActivity(), ListOfPizzas.class);
                 intent.putStringArrayListExtra("toppingsArrayList", toppingsArrayList);
                 intent.putStringArrayListExtra("pizzaNamesArrayList", pizzaNamesArrayList);
+                intent.putExtra("pizzaArrayList", pizzaArrayList);
                 startActivity(intent);
             }
         });
