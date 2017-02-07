@@ -6,7 +6,7 @@
     tools:context="layout.ToppingsListTwo">
 
     <ListView
-        android:id="@+id/toppingsListView"
+        android:id="@+id/toppingsListViewTwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>
