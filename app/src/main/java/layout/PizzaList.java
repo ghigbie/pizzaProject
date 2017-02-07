@@ -21,9 +21,9 @@ public class PizzaList extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_pizza_list, container, false);
 
-        ArrayList<String> pizzaArrayList = getArguments().getStringArrayList("pizzaArraysList");
+        ArrayList<String> pizzaNamesArrayList = getArguments().getStringArrayList("pizzaNamesArraysList");
         ListView listView = (ListView) view.findViewById(R.id.pizzaListView);
-        ListAdapter listAdapter = new CustomListAdapterPizza(getActivity().getApplicationContext(), pizzaArrayList);
+        ListAdapter listAdapter = new CustomListAdapterPizza(getActivity().getApplicationContext(), pizzaNamesArrayList);
 
         listView.setAdapter(listAdapter);
 
