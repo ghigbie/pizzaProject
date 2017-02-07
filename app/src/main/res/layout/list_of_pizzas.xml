@@ -4,21 +4,25 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackgroud">
 
-    <ListView
-        android:id="@+id/pizzaListView"
+    <FrameLayout
+        android:id="@+id/fragment_container2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </ListView>
+        <ListView
+            android:id="@+id/pizzaListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
 
-    <Button
-        android:id="@+id/createNewPizza1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/buttonMargin"
-        android:text="@string/create_new_pizza" />
+        <Button
+            android:id="@+id/createNewPizza1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/buttonMargin"
+            android:text="@string/create_new_pizza" />
 
-
+    </FrameLayout>
 
 </RelativeLayout>
