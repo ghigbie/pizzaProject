@@ -18,9 +18,8 @@ import java.util.ArrayList;
 
 
 public class ToppingsList extends Fragment {
-
-    PizzaSaveAndName pizzaSaveAndName;
-    View view;
+    private ArrayList<String> toppingsArrayList;
+    private View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,6 +46,11 @@ public class ToppingsList extends Fragment {
 
             @Override
             public void onClick(View view) {
+                PizzaSaveAndName pizzaSaveAndName = new PizzaSaveAndName();
+                Bundle bundle = new Bundle();
+                bundle.putStringArrayList("toppingsArrayList", toppingsArrayList);
+                pizzaSaveAndName.setArguments(bundle);
+
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.add(R.id.fragment_container, pizzaSaveAndName);
