@@ -46,7 +46,7 @@ public class PizzaSaveAndName extends Fragment {
         });
     }
 
-    public void getPizzaName() {
+    public void getPizzaName() { //this method gets the pizza name and then creates a pizza object
 
         EditText editText = (EditText) view.findViewById(R.id.edit_text_pizza_name);
         String pizzaName;
@@ -84,10 +84,6 @@ public class PizzaSaveAndName extends Fragment {
 
     }
 
-    public void createPizzaObject(){
 
-        pizzaArrayList.add()
-
-    }
 
 }
