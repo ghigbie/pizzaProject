@@ -13,6 +13,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import layout.ToppingsList;
+
 
 public class ListOfPizzas extends AppCompatActivity {
     private ArrayList<String> toppingsArrayList;
@@ -36,10 +38,16 @@ public class ListOfPizzas extends AppCompatActivity {
                 new AdapterView.OnItemClickListener(){
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                        ToppingsList toppingsList = new ToppingsList();
+                        Bundle bundle = new Bundle();
+                        bundle.putStringArrayList("toppingsArrayList", toppingsArrayList);
+                        toppingsList.setArguments(bundle);
+
                         FragmentManager fragmentManager = getSupportFragmentManager();
                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        fragmentTransaction.add()
+                        fragmentTransaction.add(R.id.fragment_container2, toppingsList);
                         fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.commit();
 
                     }
                 }
