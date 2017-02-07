@@ -28,6 +28,8 @@ public class ListOfPizzas extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.pizzaListView);
         CustomListAdapterPizza listAdapterPizza = new CustomListAdapterPizza(this, pizzaNamesArrayList);
         listView.setAdapter(listAdapterPizza);
+
+        setOnClickListener();
     }
 
     public void setOnClickListener(){
@@ -35,7 +37,8 @@ public class ListOfPizzas extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
     }
