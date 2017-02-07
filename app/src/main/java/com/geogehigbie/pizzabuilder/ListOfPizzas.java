@@ -8,9 +8,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by georgehigbie on 2/6/17.
- */
 
 public class ListOfPizzas extends AppCompatActivity {
     private ArrayList<String> toppingsArrayList;
