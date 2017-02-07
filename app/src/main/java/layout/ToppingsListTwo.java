@@ -11,7 +11,7 @@ import com.geogehigbie.pizzabuilder.R;
 
 public class ToppingsListTwo extends Fragment {
 
-    View view
+    View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
