@@ -74,8 +74,8 @@ public class PizzaSaveAndName extends Fragment {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getActivity(), ListOfPizzas.class);
-                intent.putStringArrayListExtra("toppingsArrayList", toppingsArrayList);
-                intent.putStringArrayListExtra("pizzaNamesArrayList", pizzaNamesArrayList);
+//                intent.putStringArrayListExtra("toppingsArrayList", toppingsArrayList);
+//                intent.putStringArrayListExtra("pizzaNamesArrayList", pizzaNamesArrayList);
                 intent.putExtra("pizzaArrayList", pizzaArrayList);
                 startActivity(intent);
             }

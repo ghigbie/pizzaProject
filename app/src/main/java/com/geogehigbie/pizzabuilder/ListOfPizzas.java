@@ -19,7 +19,7 @@ import layout.ToppingsListTwo;
 public class ListOfPizzas extends AppCompatActivity {
     private ArrayList<String> toppingsArrayList;
     private ArrayList<String> pizzaNamesArrayList;
-    private ArrayList<Pizza> pizzasArrayList;
+    private ArrayList<Pizza> pizzaArrayList;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -27,9 +27,14 @@ public class ListOfPizzas extends AppCompatActivity {
         setContentView(R.layout.list_of_pizzas);
 
         Intent intent = getIntent();
-        toppingsArrayList = intent.getStringArrayListExtra("toppingsArrayList");
-        pizzaNamesArrayList = intent.getStringArrayListExtra("pizzaNamesArrayList");
+//        toppingsArrayList = intent.getStringArrayListExtra("toppingsArrayList");
+//        pizzaNamesArrayList = intent.getStringArrayListExtra("pizzaNamesArrayList");
+        pizzaArrayList = (ArrayList<Pizza>) intent.getSerializableExtra("pizzaArrayList");
 
+        for(int i = 0; i < pizzaArrayList.size(); i++){
+            String newPizzaName = pizzaArrayList.get(i).getName();
+            pizzaNamesArrayList.add(newPizzaName);
+        }
         ListView listView = (ListView) findViewById(R.id.pizzaListView);
         CustomListAdapterPizza listAdapterPizza = new CustomListAdapterPizza(this, pizzaNamesArrayList);
         listView.setAdapter(listAdapterPizza);
