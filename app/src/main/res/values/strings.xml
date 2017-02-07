@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">PizzaBuilder</string>
     <string name="app_title">Pizza Builder</string>
-    <string name="instructions">(Tap the pizza below to begin)</string>
+    <string name="instructions">Tap the pizza below to begin!</string>
     <string name="question_start">Type your pizza name below, and press ENTER.</string>
     <string name="see_list">See List of Existing Pizzas</string>
     <string name="list_item">Name of Pizza</string>

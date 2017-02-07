@@ -4,10 +4,54 @@
     android:layout_height="match_parent"
     tools:context="layout.PizzaSaveAndName">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/question_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/textMarginFragments"
+            android:text="@string/question_start"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_pizza_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_start"
+            android:layout_margin="@dimen/textMargin"
+            android:background="@color/colorTextInputBackground"
+            android:hint="@string/pizza_name"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+
+        <Button
+            android:id="@+id/enter_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_pizza_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/buttonMargin"
+            android:layout_weight="1"
+            android:text="@string/enter" />
+
+
+
+        <Button
+            android:id="@+id/seeListOfPizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_start"
+            android:layout_centerInParent="true"
+            android:text="@string/see_list"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
 
 </FrameLayout>
