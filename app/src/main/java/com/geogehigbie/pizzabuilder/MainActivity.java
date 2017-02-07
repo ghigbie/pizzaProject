@@ -3,9 +3,13 @@ package com.geogehigbie.pizzabuilder;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+
+import layout.ToppingsStart;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
         pizzaImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), PizzaBuilderStart.class);
-                startActivity(intent);
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.add(R.id.fragment_container, new ToppingsStart());
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
     }

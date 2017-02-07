@@ -28,6 +28,8 @@ public class PizzaBuilderStart extends AppCompatActivity {
     ArrayList<String> pizzaNamesArrayList;
     ArrayList<Pizza> pizzasArrayList;
 
+    PizzaList pizzaList;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +53,6 @@ public class PizzaBuilderStart extends AppCompatActivity {
         final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         Button enterButton = (Button) findViewById(R.id.enter_start);
-       // Button noButton = (Button) findViewById(R.id.no_start);
         final Button seeListPizzasButton = (Button) findViewById(R.id.seeListOfPizza);
 
         EditText editText = (EditText) findViewById(R.id.edit_text_pizza_name);
@@ -73,13 +74,10 @@ public class PizzaBuilderStart extends AppCompatActivity {
                     ToppingsStart toppingsStart = new ToppingsStart(); //creates a new fragment
                     toppingsStart.setArguments(bundle1);
 
-                    Bundle bundle2 = new Bundle();
-                    bundle2.putStringArrayList("pizzaNamesArrayList", pizzaNamesArrayList);
-                    toppingsStart.setArguments(bundle2);
-
                     fragmentTransaction.add(R.id.fragment_container, toppingsStart);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
+
                 }
             });
         }else{
@@ -87,12 +85,6 @@ public class PizzaBuilderStart extends AppCompatActivity {
             toast.show();
         }
 
-//        noButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
 
         seeListPizzasButton.setOnClickListener(new View.OnClickListener() {
             @Override
