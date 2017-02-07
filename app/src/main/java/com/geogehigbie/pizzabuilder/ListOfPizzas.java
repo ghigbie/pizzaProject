@@ -18,12 +18,12 @@ public class ListOfPizzas extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.list_of_pizzas);
+
         Intent intent = getIntent();
         toppingsArrayList = intent.getStringArrayListExtra("toppingsArrayList");
         pizzaNamesArrayList = intent.getStringArrayListExtra("pizzaNamesArrayList");
 
-
-
-        super.onCreate(savedInstanceState);
     }
 }

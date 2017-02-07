@@ -18,9 +18,6 @@ import layout.ToppingsStart;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
-/**
- * Created by georgehigbie on 1/31/17.
- */
 
 public class PizzaBuilderStart extends AppCompatActivity {
 
